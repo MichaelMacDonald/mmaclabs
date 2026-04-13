@@ -24,65 +24,67 @@
     </header>
     <main>
         <p><strong>Effective Date:</strong> April 13, 2026</p>
-        <p>MMac Labs ("Company", "we", "us") respects your privacy. This Privacy Policy explains how we collect, use, and protect information when you use our software applications and services ("Services").</p>
+        <p>This Privacy Policy describes how data is handled by the internal software tools developed by Michael Mac Donald under MMac Labs ("Developer", "I", "me"). These tools are built for the Developer's personal and internal business use and are not offered as a service to third parties.</p>
 
-        <h2>1. Information We Access</h2>
-        <p>Our Services integrate with third-party platforms (such as QuickBooks Online and payment processors) on your behalf. When you authorize a connection, our Services may access:</p>
+        <h2>1. Nature of the Application</h2>
+        <p>MMac Labs tools are private, internal-use applications that integrate with third-party platforms (such as QuickBooks Online) via their official APIs. They are used exclusively to manage the Developer's own business accounts. No third-party users connect their data through these tools.</p>
+
+        <h2>2. Data Accessed</h2>
+        <p>When connected to a third-party platform, these tools may access:</p>
         <ul>
             <li>Financial transaction data (invoices, bills, payments, bank transactions)</li>
             <li>Account and company information</li>
             <li>Chart of accounts and categorization data</li>
-            <li>Contact information for customers and vendors within your accounting platform</li>
+            <li>Contact information for customers and vendors</li>
+            <li>Financial reports (profit and loss, balance sheet, etc.)</li>
         </ul>
+        <p>All data accessed belongs to the Developer's own business accounts.</p>
 
-        <h2>2. How We Use Your Information</h2>
-        <p>We access your data solely to provide the Services you have requested, including:</p>
+        <h2>3. How Data Is Used</h2>
+        <p>Data is accessed solely for the purpose of:</p>
         <ul>
-            <li>Retrieving and displaying financial data for review</li>
-            <li>Categorizing and organizing transactions</li>
-            <li>Generating financial reports</li>
-            <li>Automating bookkeeping workflows</li>
+            <li>Reviewing and categorizing financial transactions</li>
+            <li>Generating financial reports for internal use</li>
+            <li>Automating routine bookkeeping tasks</li>
+            <li>Reconciling bank feeds and account balances</li>
+            <li>Preparing data for the Developer's accountant and tax submissions</li>
         </ul>
-        <p>We do not use your data for advertising, profiling, or any purpose unrelated to the Services.</p>
+        <p>Data is never used for advertising, profiling, analytics on third parties, or any purpose unrelated to the Developer's own business operations.</p>
 
-        <h2>3. Data Storage and Retention</h2>
+        <h2>4. Data Storage and Processing</h2>
         <ul>
-            <li>Our Services operate primarily as client-side tools. Data retrieved from third-party platforms is processed locally on your device.</li>
-            <li>We do not maintain a central database of user financial data.</li>
-            <li>OAuth tokens and credentials are stored locally on your device in encrypted or access-restricted files.</li>
-            <li>We do not retain your financial data after the requested operation is complete.</li>
+            <li>All data processing occurs locally on the Developer's own devices.</li>
+            <li>No central server or cloud database stores business or financial data.</li>
+            <li>OAuth 2.0 tokens and API credentials are stored locally in access-restricted files (owner-only permissions).</li>
+            <li>No financial data is retained beyond the immediate operation being performed.</li>
         </ul>
 
-        <h2>4. Data Sharing</h2>
-        <p>We do not sell, rent, trade, or otherwise share your personal or financial data with third parties. Your data is transmitted only between your device and the authorized third-party platform (e.g., QuickBooks Online) using secure, encrypted connections.</p>
+        <h2>5. Data Sharing</h2>
+        <p>The Developer does not sell, rent, trade, or otherwise share business or financial data with any third party. Data is transmitted only between the Developer's device and the authorized third-party platform (e.g., QuickBooks Online) using secure, encrypted connections (HTTPS/TLS).</p>
 
-        <h2>5. Security</h2>
-        <p>We take reasonable measures to protect your data, including:</p>
+        <h2>6. Security Measures</h2>
         <ul>
-            <li>Using OAuth 2.0 for secure authorization with third-party platforms</li>
-            <li>Storing credentials with restricted file permissions</li>
-            <li>Transmitting data over HTTPS/TLS encrypted connections</li>
-        </ul>
-        <p>No system is completely secure. You are responsible for maintaining the security of your device and credentials.</p>
-
-        <h2>6. Your Rights</h2>
-        <ul>
-            <li>You may disconnect our Services from your third-party accounts at any time through the platform's authorization settings.</li>
-            <li>You may request deletion of any locally stored credentials by removing the application configuration files.</li>
-            <li>Disconnecting revokes our access immediately — no residual data remains on our systems.</li>
+            <li>OAuth 2.0 for secure authorization with third-party platforms</li>
+            <li>All API communication over HTTPS/TLS encrypted connections</li>
+            <li>Credentials and tokens stored with restricted file permissions (chmod 600)</li>
+            <li>Client secrets are never hardcoded in source code or exposed in application logs</li>
+            <li>Access tokens are refreshed only when expired, per platform guidelines</li>
         </ul>
 
-        <h2>7. Third-Party Services</h2>
-        <p>Our Services interact with third-party platforms governed by their own privacy policies. We encourage you to review the privacy policies of any connected platforms (e.g., Intuit's privacy policy for QuickBooks Online).</p>
+        <h2>7. Third-Party Platform Compliance</h2>
+        <p>These tools interact with third-party platforms governed by their own privacy policies and terms of service. The Developer complies with all applicable platform requirements, including Intuit's Developer Terms of Service and Global Privacy Statement.</p>
 
-        <h2>8. Children's Privacy</h2>
-        <p>Our Services are not intended for use by individuals under the age of 18. We do not knowingly collect data from minors.</p>
+        <h2>8. No Collection of Third-Party Personal Data</h2>
+        <p>These tools do not collect, process, or store personal data from third-party individuals. Any customer or vendor contact information within the Developer's accounting platform is the Developer's own business data, managed in accordance with applicable data protection laws.</p>
 
-        <h2>9. Changes to This Policy</h2>
-        <p>We may update this Privacy Policy from time to time. Changes will be reflected by updating the effective date above.</p>
+        <h2>9. Data Retention and Deletion</h2>
+        <p>OAuth tokens may be stored locally for the duration of the authorized connection. Revoking access through the third-party platform (e.g., disconnecting the app in QuickBooks Online) immediately terminates the tool's access. Locally stored tokens can be deleted by removing the application configuration files.</p>
 
-        <h2>10. Contact</h2>
-        <p>For questions about this Privacy Policy, contact us at <strong>mike@mmaclabs.com</strong>.</p>
+        <h2>10. Changes to This Policy</h2>
+        <p>This Privacy Policy may be updated at any time. Changes will be reflected by updating the effective date above.</p>
+
+        <h2>11. Contact</h2>
+        <p>Michael Mac Donald — <strong>mike@mmaclabs.com</strong></p>
     </main>
     <footer>
         <p>&copy; 2026 MMac Labs. All rights reserved.</p>

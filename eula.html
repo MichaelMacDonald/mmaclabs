@@ -24,51 +24,57 @@
     </header>
     <main>
         <p><strong>Effective Date:</strong> April 13, 2026</p>
-        <p>This End-User License Agreement ("Agreement") governs your use of software applications and services ("Services") provided by MMac Labs ("Company", "we", "us"). By accessing or using our Services, you agree to be bound by this Agreement.</p>
+        <p>This End-User License Agreement ("Agreement") governs the use of software tools developed by Michael Mac Donald under MMac Labs ("Developer", "I", "me"). These tools are built for the Developer's personal and internal business use.</p>
 
-        <h2>1. License Grant</h2>
-        <p>We grant you a limited, non-exclusive, non-transferable, revocable license to use our Services for their intended purpose, subject to the terms of this Agreement.</p>
+        <h2>1. Purpose and Scope</h2>
+        <p>The software developed under MMac Labs consists of internal tools and integrations that connect to third-party platforms — including accounting software (such as QuickBooks Online), payment processors, and business management systems — for the purpose of managing the Developer's own business operations.</p>
+        <p>These tools are not distributed commercially, offered as a service to third parties, or listed on any public application marketplace.</p>
 
-        <h2>2. Scope of Services</h2>
-        <p>Our Services include software tools that integrate with third-party platforms, including but not limited to accounting software (e.g., QuickBooks Online), payment processors, and business management systems. Our tools facilitate data retrieval, transaction management, reporting, and workflow automation on behalf of authorized users.</p>
-
-        <h2>3. Account and Authorization</h2>
+        <h2>2. Authorization and Access</h2>
         <ul>
-            <li>You must have valid authorization to access any third-party accounts connected through our Services.</li>
-            <li>You are responsible for maintaining the confidentiality of your credentials and access tokens.</li>
-            <li>You agree to use our Services only with accounts you own or are authorized to manage.</li>
+            <li>The tools access only accounts owned and operated by the Developer.</li>
+            <li>All third-party platform connections are authorized through standard OAuth 2.0 flows using the Developer's own credentials.</li>
+            <li>No third-party users connect their accounts through these tools.</li>
         </ul>
 
-        <h2>4. Data Handling</h2>
+        <h2>3. Data Handling</h2>
         <ul>
-            <li>Our Services access third-party data solely to perform the functions you request.</li>
-            <li>We do not sell, share, or distribute your financial data to third parties.</li>
-            <li>Data retrieved from connected platforms is processed locally or in transit and is not stored on our servers beyond what is necessary to complete the requested operation.</li>
+            <li>Data accessed through third-party platform APIs is the Developer's own business data.</li>
+            <li>Data is processed locally on the Developer's devices and is not transmitted to external servers beyond the authorized third-party platforms.</li>
+            <li>OAuth tokens and API credentials are stored locally with restricted file permissions.</li>
+            <li>No business or financial data is sold, shared, or disclosed to third parties.</li>
         </ul>
 
-        <h2>5. Prohibited Uses</h2>
-        <p>You agree not to:</p>
+        <h2>4. Compliance with Third-Party Terms</h2>
+        <p>The Developer acknowledges and agrees to comply with the terms of service of all connected third-party platforms, including but not limited to:</p>
         <ul>
-            <li>Use our Services for any unlawful purpose.</li>
-            <li>Attempt to reverse-engineer, decompile, or disassemble the software.</li>
-            <li>Use the Services to access accounts without proper authorization.</li>
-            <li>Redistribute, sublicense, or resell the Services without written consent.</li>
+            <li>Intuit's Developer Terms of Service for QuickBooks Online</li>
+            <li>Intuit's Global Privacy Statement</li>
+            <li>Intuit's security requirements for application developers</li>
         </ul>
 
-        <h2>6. Disclaimer of Warranties</h2>
-        <p>Our Services are provided "as is" without warranties of any kind, express or implied. We do not guarantee uninterrupted or error-free operation. You acknowledge that financial data management carries inherent risks, and you are responsible for verifying the accuracy of any outputs produced by our Services.</p>
+        <h2>5. Security Practices</h2>
+        <ul>
+            <li>All API communication uses HTTPS/TLS encrypted connections.</li>
+            <li>OAuth 2.0 is used for all third-party platform authorization.</li>
+            <li>Client secrets and tokens are stored in access-restricted files and are never hardcoded in source code or exposed in logs.</li>
+            <li>Access tokens are refreshed only when expired, in accordance with platform guidelines.</li>
+        </ul>
 
-        <h2>7. Limitation of Liability</h2>
-        <p>To the maximum extent permitted by law, MMac Labs shall not be liable for any indirect, incidental, consequential, or punitive damages arising from your use of the Services, including but not limited to financial losses, data loss, or business interruption.</p>
+        <h2>6. Intellectual Property</h2>
+        <p>All software developed under MMac Labs is the intellectual property of Michael Mac Donald. The software is licensed, not sold.</p>
 
-        <h2>8. Termination</h2>
-        <p>We may terminate or suspend your access to the Services at any time, with or without cause. Upon termination, all licenses granted under this Agreement cease immediately.</p>
+        <h2>7. Disclaimer of Warranties</h2>
+        <p>These tools are provided "as is" for internal use. The Developer assumes all risk associated with their use, including the management of financial data. No warranties of any kind are made regarding the accuracy, reliability, or fitness for purpose of the software.</p>
+
+        <h2>8. Limitation of Liability</h2>
+        <p>To the maximum extent permitted by law, the Developer shall not be liable for any indirect, incidental, or consequential damages arising from the use of these tools, including but not limited to financial discrepancies, data loss, or business interruption.</p>
 
         <h2>9. Changes to This Agreement</h2>
-        <p>We reserve the right to modify this Agreement at any time. Continued use of the Services after changes constitutes acceptance of the revised terms.</p>
+        <p>This Agreement may be updated at any time. Changes will be reflected by updating the effective date above.</p>
 
         <h2>10. Contact</h2>
-        <p>For questions about this Agreement, contact us at <strong>mike@mmaclabs.com</strong>.</p>
+        <p>Michael Mac Donald — <strong>mike@mmaclabs.com</strong></p>
     </main>
     <footer>
         <p>&copy; 2026 MMac Labs. All rights reserved.</p>
